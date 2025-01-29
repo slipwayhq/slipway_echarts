@@ -1,5 +1,5 @@
 {
-  "publisher": "slipway",
+  "publisher": "slipwayhq",
   "name": "echarts",
   "description": "Takes an echarts definition and returns a canvas.",
   "version": "0.0.1",
@@ -35,7 +35,7 @@
   },
   "rigging": {
     "echarts": {
-      "component": "slipway.echarts_svg.0.0.1",
+      "component": "slipwayhq.echarts_svg.0.0.1",
       "input": {
         "width": "$$.input.width",
         "height": "$$.input.height",
@@ -44,7 +44,7 @@
       }
     },
     "output": {
-      "component": "slipway.svg.0.0.1",
+      "component": "slipwayhq.svg.0.0.1",
       "allow": [
         { "permission": "font" }
       ],
