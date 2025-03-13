@@ -2,8 +2,8 @@ publisher := "slipwayhq"
 name := "echarts"
 
 build:
-  rm -rf artifacts
-  mkdir -p artifacts/{{publisher}}.{{name}}
-  cp -r component/* artifacts/{{publisher}}.{{name}}
-  slipway package artifacts/{{publisher}}.{{name}}
+  rm -rf components
+  mkdir -p components/{{publisher}}.{{name}}
+  cp -r src/* components/{{publisher}}.{{name}}
+  slipway package components/{{publisher}}.{{name}}
 
