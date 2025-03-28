@@ -46,7 +46,7 @@
     "output": {
       "component": "slipwayhq.svg.0.0.1",
       "allow": [
-        { "permission": "font" }
+        { "permission": "fonts" }
       ],
       "input": {
         "width": "$$.input.width",
