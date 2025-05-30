@@ -1,6 +1,6 @@
 {
   "publisher": "slipwayhq",
-  "name": "echarts_svg",
+  "name": "echarts__svg",
   "description": "Takes an echart definition and returns an SVG string.",
   "version": "0.0.1",
   "input": {
