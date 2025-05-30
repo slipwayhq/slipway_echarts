@@ -10,7 +10,8 @@
       "chart": {}
     },
     "optionalProperties": {
-      "theme": {}
+      "theme": {},
+      "apply": { "type": "string" }
     }
   },
   "output": {
@@ -35,12 +36,13 @@
   },
   "rigging": {
     "echarts": {
-      "component": "slipwayhq.echarts_svg.0.5.0",
+      "component": "slipwayhq.echarts__svg.0.5.0",
       "input": {
         "width": "$$.input.width",
         "height": "$$.input.height",
         "chart": "$$.input.chart",
-        "theme": "$$?input.theme"
+        "theme": "$$?input.theme",
+        "apply": "$$?input.apply"
       }
     },
     "output": {

@@ -1,4 +1,4 @@
 /artifacts
-/components
+/components/*.tar
 
 .DS_Store

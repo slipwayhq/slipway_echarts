@@ -1,18 +1,15 @@
 publisher := "slipwayhq"
-name := "echarts"
 
-build: assemble && package
-build-ci: assemble && package-ci
+build: clean && (package "echarts") (package "echarts__svg")
+build-ci: clean && (package-ci "echarts") (package-ci "echarts__svg")
 
-assemble:
-  rm -rf components
-  mkdir -p components/{{publisher}}.{{name}}
-  cp -r src/* components/{{publisher}}.{{name}}
+clean:
+  rm -f components/*.tar
 
-package:
+package name:
   slipway package components/{{publisher}}.{{name}}
 
-package-ci:
+package-ci name:
   docker run --rm -v "$(pwd)/components":/workspace -w /workspace slipwayhq/slipway:latest slipway package {{publisher}}.{{name}}
 
 release version:
