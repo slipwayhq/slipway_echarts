@@ -23,7 +23,7 @@ This component may need to access fonts from the local system.
 
 Test the component by running the following command and pasting in the input when prompted:
 ```
-slipway run-component "slipwayhq.echarts.0.5.1" --allow-fonts --allow-registry-components
+slipway run-component "slipwayhq.echarts.0.5.4" --allow-fonts --allow-registry-components
 ```
 
 Input:
@@ -99,7 +99,7 @@ This component may need to access fonts from the local system.
 
 Test the component by running the following command and pasting in the input when prompted:
 ```
-slipway run-component "slipwayhq.echarts_svg.0.5.0" --allow-fonts
+slipway run-component "slipwayhq.echarts__svg.0.5.4" --allow-fonts
 ```
 
 Input:
