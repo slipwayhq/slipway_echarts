@@ -45,6 +45,7 @@ jobs:
           find components -type f -name slipway_component.json | while read -r file; do
             jq --arg v "$VERSION" '.version = $v' "$file" > tmp && mv tmp "$file"
           done
+          sed -r -i "s|slipwayhq\.echarts__svg\.[0-9]+\.[0-9]+\.[0-9]+|slipwayhq.echarts__svg.${VERSION}|g" components/slipwayhq.echarts/slipway_component.json
 
       - name: Build release tarball
         run: just build-ci
